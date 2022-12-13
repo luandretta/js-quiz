@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:ital@1&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
     font-family: "Lora", serif;
+    outline: 1px solid red;
 }
 
 body {
@@ -20,7 +22,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: #323330;
     text-align: center;
-    background-color: #cddde6;
+    background-color: #F0DB4F;
     padding: 40px 0;
     border-radius: 0 0 50px 50px;
 }
@@ -37,7 +39,7 @@ body {
 
 /* Quiz container */
 #quiz-container {
-    width: 600px;
+    width: 500px;
     margin: 50px auto;
     padding: 25px;
     border: 1px solid #cddde6;
@@ -93,7 +95,8 @@ body {
     flex: 1 1 0;
 }
 
-@media(max-width: 450px) {
+/* Media querie*/
+@media(max-width: 500px) {
     #quiz-container {
         width: 100%;
         border: none;
