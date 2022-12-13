@@ -96,7 +96,7 @@ body {
 }
 
 /* Media querie*/
-@media(max-width: 500px) {
+@media screen and (max-width: 500px) {
     #quiz-container {
         width: 100%;
         border: none;

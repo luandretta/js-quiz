@@ -1,6 +1,6 @@
-# Quiz JavaScript
+#  JavaScript Quiz
 
-Quiz JavaScript is a website that offers a challenging quiz to entertain online users as students or newbies JavaScript programmers who want to test their basic knowledge of JavaScript.
+JavaScript Quiz is a website that offers a challenging quiz to entertain online users as students or newbies JavaScript programmers who want to test their basic knowledge of JavaScript.
 
 ![describe](documentation/responsive-design.PNG)
 
@@ -40,17 +40,11 @@ A live demo can be found [here](https://luandretta.github.io/quiz-js/)
 
 ## User stories
 
-### First Time Visitor Goals
  * As a new visitor to the website, I expect to easily to understand the main purpose of the site and navigate without complications. 
  * I expect clear questions about JavaScript.
  * I want to see my score.
+ * I want to follow the social medias.
  
-
-### As a Returning Visitor
- * I expect different levels of questions.
- * I want to fill a form to give feedbacks or to ask any questions.
-
-
 
 - - -
 
@@ -59,7 +53,7 @@ A live demo can be found [here](https://luandretta.github.io/quiz-js/)
 
 ## Features
 
-The website is comprised of 2 pages, the index page and the contact page.
+The website is comprised of 1 page, the index page.
 
 
  ### **Index page**
@@ -70,21 +64,14 @@ The **Home** page has the header, the quiz section and a footer.
 Below the header the user can type your name and start the quiz.
 The quiz has 10 questions with 4 alternatives each. The user will answer the first question in order to see the next one until he/she finishes the quiz and sees his/her score. 
 
-  ### **Contact**
-The **contact** page features a contact form, which requests user name and email and has a box to leave a message.
-The user can specify if he would like to give feedback or if he has a question or suggestion.
-The buttom of the form contains a Send Message.
-
-![Contact form](documentation/form.PNG)
-
 
 ### Existing Features
 - - -
 
-All Pages on the website have: 
-- Header Logo
-Exist on the top left. Clicking the logo returns users to the home page as they would expect.
+The page on the website have: 
+- Header 
 
+- Quiz area
 
 - Footer Social Icons
 This allows all users to access the social platforms from the community and to keep conected via social media.
@@ -108,7 +95,7 @@ The accessibility was confirmed by running it through lighthouse in devtools.
 ## Color Scheme
 
 ## Typography
-The fonts Allan und Lato are imported from Google Fonts.
+The fonts Ubuntu und Lora are imported from Google Fonts.
   
 
 ## Imagery
