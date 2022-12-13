@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quiz JavaScript is a website that offers a challenging quiz to entertain online users as students or newbies JavaScript programmers who want to test their basic knowledge of JavaScript.">
+    <meta name="description"
+        content="Quiz JavaScript is a website that offers a challenging quiz to entertain online users as students or newbies JavaScript programmers who want to test their basic knowledge of JavaScript.">
     <meta name="keywords" content="quiz, JavaScript, JS, Programming, Coding, Front-End">
     <meta name="Author" content="Lucimeri Andretta">
+    <link rel="shortcut icon" href="assets/images/icons8-quiz-58.png">
     <title>Quiz JavaScript</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
 </head>
+
 <body>
     <!-- Header -->
-    <header>
-        <h1>Quiz</h1>
+    <header id="main-title">
+        <h1>Quiz JavaScript</h1>
     </header>
-    <!-- Quiz area-->
+    <!-- Score board-->
+    <div id="score-container" class="hide">
+        <h2>Congratulations!</h2>
+        <p>You got 90% of the questions right</p>
 
+    </div>
+    <!-- Quiz container-->
+    <div id="quiz-container">
+        <!-- Question area-->
+        <p id="question-area">
+            <span id="question-number">1</span>
+            <span id="question">JavaScript is ...</span>
+        </p>
+        <!-- Answer area-->
+        <div id="answers-box">
+            <button><span class="btn-letter">a</span> <span class="question-answer">a scripting language</span></button>
+            <button><span class="btn-letter">b</span> <span class="question-answer">a markup language</span></button>
+            <button><span class="btn-letter">c</span> <span class="question-answer">a programming
+                    language</span></button>
+            <button><span class="btn-letter">d</span> <span class="question-answer">a scripting and programming
+                    language</span></button>
+        </div>
+        <!--answer template-->
+        <button class="answer-template hide"><span class="btn-letter">d</span> <span class="question-answer">a scripting and programming
+            language</span></button>
+    </div>
     <!-- Footer-->
-    
+
 </body>
+
 </html>
