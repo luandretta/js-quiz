@@ -9,190 +9,190 @@ const answerBox = document.querySelector("#answers-box");
 // questions
 const questions = [
     {
-        "question": "",
+        "question": "Variables using let keyword",
         "answers": [
             {
-                "answer": "",
+                "answer": "have block scope, can be redeclared and reassigned",
+                "correct": false
+            },
+            {
+                "answer": "have block scope, cannot be redeclared and can be reassigned",
                 "correct": true
             },
             {
-                "answer": "",
+                "answer": "have global scope, cannot be reassigned and can be redeclared",
+                "correct": false
+            },
+            {
+                "answer": "have global scope, cannot be redeclared and can be reassigned",
+                "correct": false
+            },
+        ]
+    },
+    {
+        "question": "Variables using const keyword",
+        "answers": [
+            {
+                "answer": "have block scope, cannot be redeclared and can be reassigned",
+                "correct": false
+            },
+            {
+                "answer": "have global scope, cannot be redeclared or reassigned",
+                "correct": false
+            },
+            {
+                "answer": "Arrays and objects stored in constants can be modified, but you can't reassign a new object or array to the same constant",
                 "correct": true
             },
             {
-                "answer": "",
+                "answer": "can be declared without being assigned a value",
+                "correct": false
+            },
+        ]
+    },
+    {
+        "question": "Variables using var keyword",
+        "answers": [
+            {
+                "answer": "are accessible outside the scope in which they are declared",
                 "correct": true
             },
             {
-                "answer": "",
+                "answer": "cannot be inadvertently overwritten",
+                "correct": false
+            },
+            {
+                "answer": "cannot create bugs in your code",
+                "correct": false
+            },
+            {
+                "answer": "have a block scope, and which can freely be reassigned or redeclared",
+                "correct": false
+            },
+        ]
+    },
+    {
+        "question": "What is the correct JavaScript syntax?",
+        "answers": [
+            {
+                "answer": "document.getElementbyClassName('demo').innerHTML = 'Hello World!';", 
+                "correct": false
+            },
+            {
+                "answer": "document.getElementsbyId('demo').innerHTML = 'Hello World!';", 
+                "correct": false
+            },
+            {
+                "answer": "document.getElementbyTagName('demo').innerHTML = 'Hello World!'; ",
+                "correct": false
+            },
+            {
+                "answer": "document.getElementbyId('demo').innerHTML = 'Hello World!';",
                 "correct": true
             },
         ]
     },
     {
-        "question": "",
+        "question": "How do you round the number 12.25 to the nearest integer?",
         "answers": [
             {
-                "answer": "",
+                "answer": "rnd(12.25)",
+                "correct": false
+            },
+            {
+                "answer": "round(12.25)",
+                "correct": false
+            },
+            {
+                "answer": "Math.round(12.25)",
                 "correct": true
             },
             {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
+                "answer": "Math.rnd(12.25)",
+                "correct": false
             },
         ]
     },
     {
-        "question": "",
+        "question": "How do you create a function in JavaScript?",
         "answers": [
             {
-                "answer": "",
+                "answer": "function myFunction()",
                 "correct": true
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "function (myFunction)",
+                "correct": false
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "function = myFunction()",
+                "correct": false
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "function: myFunction()",
+                "correct": false
             },
         ]
     },
     {
-        "question": "",
+        "question": "How do you call a function named 'start'?",
         "answers": [
             {
-                "answer": "",
+                "answer": "call start()",
+                "correct": false
+            },
+            {
+                "answer": "start()",
                 "correct": true
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "call(start)",
+                "correct": false
             },
             {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
+                "answer": "console.log.start",
+                "correct": false
             },
         ]
     },
     {
-        "question": "",
+        "question": "How to write an IF statement for executing some come if 'i' is NOT equal to 2?",
         "answers": [
             {
-                "answer": "",
+                "answer": "if (i != 2)",
                 "correct": true
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "if i not == 2 then",
+                "correct": false
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "if i ==! 2",
+                "correct": false
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "if i =! 2 then",
+                "correct": false
             },
         ]
     },
     {
-        "question": "",
+        "question": "How does a FOR loop start?",
         "answers": [
             {
-                "answer": "",
-                "correct": true
+                "answer": "for (i < 8; i++)",
+                "correct": false
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "for i = 0 (i < 8; i++)",
+                "correct":false
             },
             {
-                "answer": "",
-                "correct": true
+                "answer": "for (i = 0; i < 8)",
+                "correct": false
             },
             {
-                "answer": "",
-                "correct": true
-            },
-        ]
-    },
-    {
-        "question": "",
-        "answers": [
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-        ]
-    },
-    {
-        "question": "",
-        "answers": [
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-        ]
-    },
-    {
-        "question": "",
-        "answers": [
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
-                "correct": true
-            },
-            {
-                "answer": "",
+                "answer": "for (i = 0; i < 8; i++)",
                 "correct": true
             },
         ]
