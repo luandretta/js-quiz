@@ -1,9 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:ital@1&display=swap');
 * {
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
 }
 
 body {
-    background-color: aqua;
+    background-color: #323330;
+    color: #fff;   
+}
+/* Header*/
+.hide {
+    display: none !important;
+}
+
+#main-title {
+    font-family: 'Ubuntu', sans-serif;
+    color: #323330;
+    text-align: center;
+    background-color: #cddde6;
+    padding: 40px 0;
+    border-radius: 0 0 50px 50px;
+}
+
+/* Score board */
+#score-container {
+    text-align: center;
+    background-color: #cddde6;
+    color: #323330;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+/* Quiz container */
+#quiz-container {
+    width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 1px solid #cddde6;
+    border-radius: 20px;
+}
+
+#question-area {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#question-number {
+    font-weight: bold;
+}
+
+#answers-box button {
+    align-items: center;
+    display: flex;
+    text-align: left;
+    color: #323330;
+    background-color: #cddde6;
+    height: 50px;
+    width: 90%;
+    margin: 15px auto;
+    border: 1.5px solid transparent;
+    border-radius: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#answers-box button:hover {
+    background-color: #F0DB4F;
+    color: #323330;
+}
+
+#answers-box .btn-letter {
+    background-color: #F0DB4F;
+    font-size: 1.5rem;
+    color:#323330;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    max-width: 40px;
+    flex: 1 1 0;
+}
+
+.question-answer {
+    font-size: 1rem;
+    margin-left: 10px;
+    flex: 1 1 0;
+}
+
+@media(max-width: 450px) {
+    #quiz-container {
+        width: 100%;
+        border: none;
+    }
+
+    #answers-box button {
+        width: 100%;
+    }
+
+    #score-container {
+        width: 90%;
+    }
 }
