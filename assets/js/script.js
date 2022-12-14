@@ -3,11 +3,39 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // declaration of the variables
+const quizContainer = document.querySelector("#quiz-container");
 const question = document.querySelector("#question-area");
 const answerBox = document.querySelector("#answers-box");
+const letters = ["a", "b", "c", "d"];
+let actualQuestion = 0;
 
-// questions
+const scoreContainer = document.querySelector("#score-container");
+let points = 0;
+
+
+// Object containing the questions of the quiz game. 
 const questions = [
+    {
+        "question": "JavaScript is",
+        "answers": [
+            {
+                "answer": "a scripting language",
+                "correct": false
+            },
+            {
+                "answer": "a markup language",
+                "correct": false
+            },
+            {
+                "answer": "a programming language",
+                "correct": false
+            },
+            {
+                "answer": "a scripting and programming language",
+                "correct": true
+            },
+        ]
+    },
     {
         "question": "Variables using let keyword",
         "answers": [
@@ -201,11 +229,33 @@ const questions = [
 ]
 
 
-// initial question
-function init()
+/**
+ * Create the initial question from quiz
+  */ 
+function start() {
+    createQuestion(0);
+}
 
-// create a question
-function createQuestion ()
+/**
+ * create question, delete old question and display a new question
+ */
+
+function createQuestion () {
+    //change de question
+    const questionText = question.querySelector("#question-text");
+    const questionNumber = question.querySelector("#question-number");
+
+    questionText.textContent = question[i].question;
+    questionNumber.textContent = i + 1;
+
+    //inserts the alternatives
+    questions[i].answers.forEach(function(answer, i) {
+
+    }
+    );
+
+
+}
 
 // check the answer
 function checkAnswer ()
