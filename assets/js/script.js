@@ -241,6 +241,12 @@ function start() {
  */
 
 function createQuestion () {
+    // remove the previous question
+    const oldButtons = answerBox.querySelectorAll("button");
+    oldButtons.forEach(function(btn) {
+        btn.remove();
+    });
+
     //change de question
     const questionText = question.querySelector("#question-text");
     const questionNumber = question.querySelector("#question-number");
@@ -250,11 +256,25 @@ function createQuestion () {
 
     //inserts the alternatives
     questions[i].answers.forEach(function(answer, i) {
+        const answerTemplate = document.querySelector(".answer-template").cloneNode(true);
+        const letterBtn = answerTemplate.querySelector(".btn-letter");
+        const answerText = answerTemplate.querySelector(".question-answer");
 
-    }
-    );
+        letterBtn.textContent = letters[i];
+        answerText.textContent = answer["answer"];
 
+        answerTemplate.setAttribute("correct-answer", answer["correct"]);
+        answerTemplate.classList.remove("hide");
+        answerTemplate.classList.remove("answer-template");
 
+        answerBox.appendChild(answerTemplate);
+
+        answerTemplate.addEventListener("click", function(){
+            checkAnswer(this);
+        });
+
+    });
+    actualQuestion++;
 }
 
 // check the answer
